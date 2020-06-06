@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="style.css"></link>
+  <title>Document</title>
+ </head>
+ <body>
+ <div id="header">
+ <h1>truyum</h1>
+ <a href="menu-item-list-admin.html" value="blank" id="menu">Menu</a>
+</div>
+<div id="contents">
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;Edit Menu item</h2>
+<form>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required pattern="[A-z]{1}[a-z]{2,65}"  class="title">
+<br>
+<br>
+<table>
+<tr>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;Price(Rs.)<br>&nbsp;&nbsp;&nbsp;
+	<input type="number" required pattern="[1-9]{1}[0-9]{10}" id="text"></td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;Active<br>&nbsp;&nbsp;
+	<input type="radio"  name="r">Yes&nbsp;&nbsp;<input type="radio"  name="r">No</td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;Date of Launch<br>&nbsp;&nbsp;&nbsp;
+	<input type="number" required pattern="[0-9]{2}[-]{1}[0-9]{2}[-]{1}[0-9]{4}" placeholder="DD/MM/YY" id="text"></td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;Category<br>&nbsp;&nbsp;&nbsp;
+	<select><option>Category</option>
+				<option>Main Course</option>
+				<option>Starters</option>
+				<option>Dessert</option>
+				<option>Drinks</option>
+				</select>
+</table>
+</form>
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Free Delivery<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="edit-menu-item-status.html"><input type="Submit" value="save" id="submit"></a>
+</div>
+<div id="footer">
+<center>
+	<h4>@copyright 2020</h4>
+</center>
+</div>
+  </body>
+</html>
